@@ -17,7 +17,7 @@ let sendSimpleEmail = async (dataSend) => {
   let info = await transporter.sendMail({
     from: '"Duy Nghĩa 👻" <duynghia22302@gmail.com>', // sender address
     to: dataSend.reciverEmail, // list of receivers
-    subject: "Thông tin đặt lịch khám bệnh ✔", // Subject line
+    subject: "Thông tin đặt lịch khám bệnh 📌", // Subject line
     html: getBodyHTMLEmail(dataSend),
   });
 };
@@ -100,7 +100,7 @@ let sendAttachment = async (dataSend) => {
       let info = await transporter.sendMail({
         from: '"Duy Nghĩa 👻" <duynghia22302@gmail.com>', // sender address
         to: dataSend.email, // list of receivers
-        subject: "Kết quả đặt lịch khám bệnh ✔", // Subject line
+        subject: "Kết quả đặt lịch khám bệnh 📌", // Subject line
         html: getBodyHTMLEmailRemedy(dataSend),
         attachments: [
           {
